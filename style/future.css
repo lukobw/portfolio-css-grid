@@ -1,0 +1,101 @@
+.future{
+	border:  1px solid #fff;
+	color: #fff;
+	display: grid;
+	grid-column-gap:  10px;
+	grid-row-gap: 50px;
+	grid-template-areas: 
+	"left . right right right"
+	"javascript . react ecma node"
+	"jquery . express redux ajax"
+	". . mongo . router";
+	grid-template-columns: 500px auto auto 200px auto;
+	grid-template-rows: auto;
+	justify-items: center;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.future img{
+	height: auto;
+	width: auto;	
+}
+
+.future h3{
+	margin: 0;
+}
+
+.future h2{
+	font-family: 'Josefin Sans', sans-serif;
+	padding-top: 50px;
+
+}
+.lower-left{
+	grid-area: left;
+	justify-self: center;
+
+}
+
+.lower-right{
+	grid-area: right;
+	justify-self: center;
+}
+
+.javascript{
+	align-self: center;
+	grid-area: javascript;
+	justify-self: center;
+}
+
+.react{
+	align-self: end;
+	grid-area: react;
+	justify-self: center;
+}
+
+.ecma{
+	align-self: end;
+	grid-area: ecma;
+	justify-self: center;
+}
+
+.node{
+	align-self: end;
+	grid-area: node;
+	justify-self: center;
+}
+
+.jquery{
+	align-self: center;
+	grid-area: jquery;
+	justify-self: center;
+}
+
+.express{
+	align-self: end;
+	grid-area: express;
+	justify-self: center;
+}
+
+.redux{
+	align-self: end;
+	grid-area: redux;
+	justify-self: center;
+}
+
+.ajax{
+	align-self: end;
+	grid-area: ajax;
+}
+
+.mongo{
+	align-self: center;
+	grid-area: mongo;
+	justify-self: center;
+}
+
+.router{
+	align-self: center;
+	grid-area: router;
+	justify-self: center;
+}

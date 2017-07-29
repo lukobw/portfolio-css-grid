@@ -1,0 +1,58 @@
+.projects{
+	color: #fff;
+	display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "head head head head"
+  "project1 project2 project3 project4";
+	grid-template-columns: auto;
+	grid-template-rows: 100px auto;
+	justify-items: center;
+	padding: 50px 0;
+}
+
+.projects img{
+	height: 300px;
+}
+
+.head{
+  font-family: 'Josefin Sans', sans-serif;
+	grid-area: head;
+	justify-self: center;
+  margin: 0 50px;
+	text-align: center;
+}
+
+.project1{
+	grid-area: project1;
+	justify-self: center;
+	text-align: center;
+}
+
+.project2{
+	grid-area: project2;
+	justify-self: center;
+	text-align: center;
+}
+
+.project3{
+	grid-area: project3;
+	justify-self: center;
+	text-align: center;
+}
+
+.project4{
+	grid-area: project4;
+	justify-self: center;
+	text-align: center;
+}
+
+.projects a, i{
+  color: #fff;
+	text-decoration: none;
+	
+}
+
+.projects p{
+	margin-bottom: 0;
+}

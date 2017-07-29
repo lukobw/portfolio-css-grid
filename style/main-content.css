@@ -1,0 +1,93 @@
+.main{
+  background-color:  #fff;/*   #22264b; */
+  color: #000; 
+  display: grid;
+  grid-gap:  10px;
+  grid-template-areas: 
+    "navbar navbar navbar"
+    "image image image"
+    "left about right"
+    "skills about tools";
+  grid-template-columns:  500px auto 500px;
+  grid-template-rows: auto;
+  justify-items: center;
+  padding-bottom: 100px;
+}
+
+.image {
+  grid-area: image;
+}
+
+.image img{
+  border-radius: 50%;
+  grid-column: 2/3;
+  height: 300px;
+  justify-items: center;
+  width:  300px;
+}
+
+.about{
+  align-self: start;
+  grid-area: about;
+  grid-template-rows:  auto;
+  
+  
+}
+.about p{
+  font-size: 24px;
+  text-align: justify;
+}
+
+.about p em{
+  visibility: hidden;
+}
+
+.about h1{
+  font-family: 'Josefin Sans', sans-serif;
+  grid-row-start: 3;
+  text-align: center;
+}
+
+.about p{
+  padding: 40px 25px;
+}
+
+.skills{
+  align-self: start;
+  grid-area: skills;
+  grid-row:  3/4;
+  justify-items: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.skills h3{
+  display: none;
+  margin-top: 0;
+}
+
+.skill img{
+  height: 100px;
+  padding: 10px 0;
+  width: 80px;
+}
+
+.tools{
+  align-self: start;
+  grid-area: tools;
+  grid-row: 3/4;
+  justify-items: center;
+  justify-self: center;
+  text-align: center;
+}
+
+
+.tool img{
+  height: 100px;
+  width: auto;
+  padding: 10px 0;
+}
+
+.navbar{
+  grid-area: navbar;
+}

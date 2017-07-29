@@ -1,0 +1,715 @@
+body{
+	background-color: #22264b;
+	font-family: 'Lato', sans-serif;
+	margin:  0;
+}.contact{
+  border:  1px solid #fff;
+  color:  #fff;
+  display: grid;
+  grid-auto-flow: column;
+  grid-row-gap:  10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  justify-items: center;
+  padding-top: 50px;
+}
+
+.contact img{
+  align-self: center;
+  border: 1px solid #000;
+  border-radius:  50%;
+  grid-column: 2;
+  grid-row: 1/2;
+  height: 300px;
+  justify-items: center;
+  width: 300px;
+}
+
+.contact-info{
+  align-self: center;
+  grid-column: 2;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+.contact-info i{
+	padding: 5px;
+}
+
+.contact-info a{
+	color: #000;
+	text-decoration: none;
+}
+
+.contact-info p{
+	margin-bottom: 0;
+}
+
+.contact-info i{
+	color: #000;
+}
+
+.icons {
+	padding: 15px;
+}
+
+.icons i{
+	padding: 5px;
+
+}footer{
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	height: 50px;
+}
+footer p{
+	line-height: 50px;
+	margin: 0;
+}
+.future{
+	border:  1px solid #fff;
+	color: #fff;
+	display: grid;
+	grid-column-gap:  10px;
+	grid-row-gap: 50px;
+	grid-template-areas: 
+	"left . right right right"
+	"javascript . react ecma node"
+	"jquery . express redux ajax"
+	". . mongo . router";
+	grid-template-columns: 500px auto auto 200px auto;
+	grid-template-rows: auto;
+	justify-items: center;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.future img{
+	height: auto;
+	width: auto;	
+}
+
+.future h3{
+	margin: 0;
+}
+
+.future h2{
+	font-family: 'Josefin Sans', sans-serif;
+	padding-top: 50px;
+
+}
+.lower-left{
+	grid-area: left;
+	justify-self: center;
+
+}
+
+.lower-right{
+	grid-area: right;
+	justify-self: center;
+}
+
+.javascript{
+	align-self: center;
+	grid-area: javascript;
+	justify-self: center;
+}
+
+.react{
+	align-self: end;
+	grid-area: react;
+	justify-self: center;
+}
+
+.ecma{
+	align-self: end;
+	grid-area: ecma;
+	justify-self: center;
+}
+
+.node{
+	align-self: end;
+	grid-area: node;
+	justify-self: center;
+}
+
+.jquery{
+	align-self: center;
+	grid-area: jquery;
+	justify-self: center;
+}
+
+.express{
+	align-self: end;
+	grid-area: express;
+	justify-self: center;
+}
+
+.redux{
+	align-self: end;
+	grid-area: redux;
+	justify-self: center;
+}
+
+.ajax{
+	align-self: end;
+	grid-area: ajax;
+}
+
+.mongo{
+	align-self: center;
+	grid-area: mongo;
+	justify-self: center;
+}
+
+.router{
+	align-self: center;
+	grid-area: router;
+	justify-self: center;
+}.main{
+  background-color:  #fff;/*   #22264b; */
+  color: #000; 
+  display: grid;
+  grid-gap:  10px;
+  grid-template-areas: 
+    "navbar navbar navbar"
+    "image image image"
+    "left about right"
+    "skills about tools";
+  grid-template-columns:  500px auto 500px;
+  grid-template-rows: auto;
+  justify-items: center;
+  padding-bottom: 100px;
+}
+
+.image {
+  grid-area: image;
+}
+
+.image img{
+  border-radius: 50%;
+  grid-column: 2/3;
+  height: 300px;
+  justify-items: center;
+  width:  300px;
+}
+
+.about{
+  align-self: start;
+  grid-area: about;
+  grid-template-rows:  auto;
+  
+  
+}
+.about p{
+  font-size: 24px;
+  text-align: justify;
+}
+
+.about p em{
+  visibility: hidden;
+}
+
+.about h1{
+  font-family: 'Josefin Sans', sans-serif;
+  grid-row-start: 3;
+  text-align: center;
+}
+
+.about p{
+  padding: 40px 25px;
+}
+
+.skills{
+  align-self: start;
+  grid-area: skills;
+  grid-row:  3/4;
+  justify-items: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.skills h3{
+  display: none;
+  margin-top: 0;
+}
+
+.skill img{
+  height: 100px;
+  padding: 10px 0;
+  width: 80px;
+}
+
+.tools{
+  align-self: start;
+  grid-area: tools;
+  grid-row: 3/4;
+  justify-items: center;
+  justify-self: center;
+  text-align: center;
+}
+
+
+.tool img{
+  height: 100px;
+  width: auto;
+  padding: 10px 0;
+}
+
+.navbar{
+  grid-area: navbar;
+}
+.navbar {
+	background-color: #000;
+	color:  white;
+	display: inline-grid;
+	grid-template-rows:  auto;
+	height: 70px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.navbar li {
+	  display: inline-block;
+}
+.navbar ul{
+	line-height: 35px;
+	text-align: center;
+	
+}.projects{
+	color: #fff;
+	display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "head head head head"
+  "project1 project2 project3 project4";
+	grid-template-columns: auto;
+	grid-template-rows: 100px auto;
+	justify-items: center;
+	padding: 50px 0;
+}
+
+.projects img{
+	height: 300px;
+}
+
+.head{
+  font-family: 'Josefin Sans', sans-serif;
+	grid-area: head;
+	justify-self: center;
+  margin: 0 50px;
+	text-align: center;
+}
+
+.project1{
+	grid-area: project1;
+	justify-self: center;
+	text-align: center;
+}
+
+.project2{
+	grid-area: project2;
+	justify-self: center;
+	text-align: center;
+}
+
+.project3{
+	grid-area: project3;
+	justify-self: center;
+	text-align: center;
+}
+
+.project4{
+	grid-area: project4;
+	justify-self: center;
+	text-align: center;
+}
+
+.projects a, i{
+  color: #fff;
+	text-decoration: none;
+	
+}
+
+.projects p{
+	margin-bottom: 0;
+}@media only screen and (min-width: 1024px) and (max-width: 1440px){
+  
+  .skills{
+  	grid-row: 3/4;
+  }
+
+  .tools{
+  	grid-row-start: 3;
+  }
+
+  .main{
+  	grid-gap: 10px;
+  	grid-template-columns: auto 600px auto;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+  .future{
+  	grid-template-columns: 300px auto auto;
+  }
+
+  .main{
+  	display: grid;
+  	grid-template-columns: 171px 682px 171px;
+
+  }
+
+  .skills{
+  	grid-row-start: 3;
+  }
+
+  .tools{
+  	grid-row-start: 3;
+  }
+
+}
+
+@media only screen and (min-width: 768px){
+
+
+  .skill{
+    transition: .6s;
+  }
+
+  .skill:hover{
+    transform: rotate(-45deg);
+	  transition: .6s ease-in-out;
+	  
+  }
+
+  .tool{
+	  transition: .6s;
+  }
+
+  .tool:hover{
+  	transform: rotate(45deg);
+	  transition: .6s ease-in-out;
+  }
+
+  .future .javascript img{
+	  transition: .6s;
+  }
+
+  .future .javascript img:hover{
+  	transform: rotate(360deg); 
+	  transition: .6s ease-in-out; 
+  }
+
+  .future .jquery img{
+	  transition: .6s;
+  }
+
+  .future .jquery img:hover{
+  	transform: rotate(360deg);
+	  transition: .6s ease-in-out;
+  }
+
+  .future .item img{
+	  transition: 1s ease-in-out;
+  }
+
+  .future .item img:hover{
+  	transform: scale(1.3);
+    transition: .6s ease-in-out;
+  }
+
+  .contact-info .my-cv:hover{
+  	color: #fff;
+  	transition: .6s;
+  }
+
+  .icons .git:hover{
+  	color: #fff;
+  	transition: .6s;
+  }
+
+  .icons .linkedin:hover{
+  	color: #0077b5;
+  	transition: .6s;
+  }
+
+  .icons .facebook:hover{
+  	color: #3b5998;
+  	transition: .6s;
+  }
+
+  .icons .my-mail:hover{
+  	color: #d24231;
+  	transition: .6s;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px){
+  
+  .about{
+    padding: 50px;
+  }
+
+  .main{
+  	display: grid;
+  	grid-template-columns: auto;
+  	grid-template-rows: auto auto auto auto 200px 200px;
+  	justify-items: center;
+  }
+
+  .image img{
+  	border-radius: 20px;
+  }
+
+  .skills{
+  	display: grid;
+    grid-column: 2/3;
+    grid-row: 5/6;
+  	grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: auto;
+  	justify-self: center;
+  }
+
+  .skills h3{
+    display: none;
+  }
+
+  .tools{
+  	display: grid;
+  	grid-column-start: 2;
+  	grid-row: 6/7;
+  	grid-template-columns: 100px 100px 100px 100px;
+  	justify-items: center;
+  }
+
+  .future{
+  	display: grid;
+  	grid-template-areas: 
+   	"learn learn learn"
+  	"javascript . jquery"
+  	"future future future"
+  	"mongo . router"
+  	"express redux ajax"
+  	"node react ecma";
+  	grid-template-columns: auto auto auto;
+  	justify-items: center;
+  }
+
+  .lower-left{
+  	grid-area: learn;
+  	justify-self: center;
+  }
+
+  .lower-right{
+  	grid-area: future;
+  }
+
+  .projects{
+   	display: grid;
+  	grid-template-areas: 
+  	"head head head"
+  	"project1 project2 project3"
+  	"project4 project4 project4";
+  	grid-template-columns: auto;
+  	grid-template-rows: auto;
+  }
+
+  .head{
+  	grid-area: head;
+  }
+
+  .project1{
+  	grid-area: project1;
+  }
+
+  .project2{
+  	grid-area: project2;
+  }
+
+  .project3{
+  	grid-area: project3;
+  }
+
+  .project4{
+  	grid-area: project4;
+  }
+}
+
+@media only screen and (min-width: 1px) and (max-width: 425px){
+
+ 	.projects{
+ 		border: 2px solid #000;	
+		display: grid;
+		grid-row-gap: 20px;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		justify-items: center;
+	}
+
+	.head{
+		align-self: center;
+		grid-row: 1/2;
+		justify-self: center;
+	}
+
+	.project1{
+		grid-column: 1/2;
+		grid-row: 2/3;
+		justify-self: center;
+	}
+
+	.project2{
+		grid-column: 1/2;
+		grid-row: 3/4;
+		justify-self: center;
+	}
+
+	.project3{
+		grid-column: 1/2;
+		grid-row: 4/5;
+		justify-self: center;
+	}
+
+	.project4{
+		grid-column-end: 3;
+		grid-column-start: 1;
+		grid-row-end: 6;
+		grid-row-start: 5;
+		justify-self: center;
+	}
+
+	  .main{
+  	display: grid;
+  	grid-row-gap: 50px;
+  	grid-template-columns: auto;
+  	grid-template-rows: auto;
+  	justify-items: center;
+  	padding-bottom: 25px;
+  }
+
+  .image img{
+  	border-radius: 0;
+  }
+
+  .skills{
+  	border-bottom: 2px solid green;
+  	grid-column: 2/3;
+  	grid-row: 5/6;	
+  }
+
+  .tools{
+  	display: none;
+  	grid-column: 2/3;
+  	grid-row: 6/7;	
+  }
+
+  .future{
+  	display: grid;
+  	grid-row-gap: 20px;
+  	grid-template-columns: 1fr 1fr;
+  	grid-template-rows: auto;
+  	padding-bottom: 80px;
+  }
+
+  .lower-left{
+  	border-bottom: 2px solid #fff;
+  	grid-column: 1/3;
+  	grid-row: 1/2;
+  	justify-items: center;
+  	justify-self: center;
+  	margin-bottom: 30px;
+  }
+
+  .javascript{
+  	grid-column: 1/2;
+  	grid-row: 2/3;
+  }
+
+  .jquery{
+  	grid-column: 2/2;
+  	grid-row: 2/3;
+  }
+
+  .lower-right{
+  	border-bottom: 2px solid #fff;
+  	grid-column: 1/3;
+  	grid-row: 3/4;
+  	margin-bottom: 30px;
+  }
+
+  .react{
+  	grid-column: 1/2;
+  	grid-row: 4/5;
+  }
+
+  .node{
+  	grid-column: 2/2;
+  	grid-row: 5/6;
+  }
+ 
+  .node{
+  	grid-column: 2/2;
+  	grid-row: 4/5;
+  }
+
+  .express{
+  	grid-column: 2/2;
+  	grid-row: 7/8;
+  }
+
+  .redux{
+  	grid-column: 1/2;
+  	grid-row: 6/7;
+  }
+
+  .ecma{
+  	grid-column: 1/2;
+  	grid-row: 7/8;
+  }
+
+  .ajax{
+  	grid-column: 2/2;
+  	grid-row:  6/7;	
+  }
+
+   .mongo{
+   	grid-column: 1/3;
+  	grid-row: 8/9;
+  }
+
+  .router{
+  	grid-column: 1/3;
+  	grid-row:  9/10;
+  }
+
+  .project4 img{
+  	max-width: 180px;
+  }
+
+  .contact img{
+  	height: 150px;
+  	width: 150px;
+  }
+
+  .about p{
+  	margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1px) and (max-width: 768px){
+  .about p em{
+  	visibility: visible;
+  }
+
+  .skills h3{
+  	display: inherit;
+  	margin:  0;
+  }
+
+  .tools{
+    display: none;
+  }
+}

@@ -1,2 +1,2 @@
-# portfolio-css-grid
-Portfolio biult only on pure CSS GRID
+Portfolio biult on pure CSS GRID
+https://lukobw.github.io/portfolio-css-grid/
